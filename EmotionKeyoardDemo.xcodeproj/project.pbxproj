@@ -14,6 +14,10 @@
 		E8639ECB1B4CC643003FC8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8639EC91B4CC643003FC8C5 /* LaunchScreen.storyboard */; };
 		E8639ED61B4CC643003FC8C5 /* EmotionKeyoardDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8639ED51B4CC643003FC8C5 /* EmotionKeyoardDemoTests.swift */; };
 		E8639EE11B4CC643003FC8C5 /* EmotionKeyoardDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8639EE01B4CC643003FC8C5 /* EmotionKeyoardDemoUITests.swift */; };
+		E8639EF01B4CC6D3003FC8C5 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E8639EEF1B4CC6D3003FC8C5 /* Emoticons.bundle */; };
+		E8639EF21B4CC76E003FC8C5 /* Emoticons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8639EF11B4CC76E003FC8C5 /* Emoticons.swift */; };
+		E87696BF1B4D053500C5E634 /* UITextView+Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */; };
+		E87696C11B4D078C00C5E634 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E8639EDC1B4CC643003FC8C5 /* EmotionKeyoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionKeyoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8639EE01B4CC643003FC8C5 /* EmotionKeyoardDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionKeyoardDemoUITests.swift; sourceTree = "<group>"; };
 		E8639EE21B4CC643003FC8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8639EEF1B4CC6D3003FC8C5 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		E8639EF11B4CC76E003FC8C5 /* Emoticons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticons.swift; sourceTree = "<group>"; };
+		E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Emoticon.swift"; sourceTree = "<group>"; };
+		E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		E8639EBF1B4CC643003FC8C5 /* EmotionKeyoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E8639EEE1B4CC66F003FC8C5 /* EmoticonKeyboard */,
 				E8639EC01B4CC643003FC8C5 /* AppDelegate.swift */,
 				E8639EC21B4CC643003FC8C5 /* ViewController.swift */,
 				E8639EC41B4CC643003FC8C5 /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				E8639EE21B4CC643003FC8C5 /* Info.plist */,
 			);
 			path = EmotionKeyoardDemoUITests;
+			sourceTree = "<group>";
+		};
+		E8639EEE1B4CC66F003FC8C5 /* EmoticonKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E8639EF11B4CC76E003FC8C5 /* Emoticons.swift */,
+				E8639EEF1B4CC6D3003FC8C5 /* Emoticons.bundle */,
+				E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */,
+				E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */,
+			);
+			name = EmoticonKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8639ECB1B4CC643003FC8C5 /* LaunchScreen.storyboard in Resources */,
+				E8639EF01B4CC6D3003FC8C5 /* Emoticons.bundle in Resources */,
 				E8639EC81B4CC643003FC8C5 /* Assets.xcassets in Resources */,
 				E8639EC61B4CC643003FC8C5 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87696C11B4D078C00C5E634 /* EmoticonAttachment.swift in Sources */,
 				E8639EC31B4CC643003FC8C5 /* ViewController.swift in Sources */,
+				E8639EF21B4CC76E003FC8C5 /* Emoticons.swift in Sources */,
 				E8639EC11B4CC643003FC8C5 /* AppDelegate.swift in Sources */,
+				E87696BF1B4D053500C5E634 /* UITextView+Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmotionKeyoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.china.cxc.EmotionKeyoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmotionKeyoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.china.cxc.EmotionKeyoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +509,7 @@
 				E8639EE71B4CC643003FC8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8639EE81B4CC643003FC8C5 /* Build configuration list for PBXNativeTarget "EmotionKeyoardDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +518,7 @@
 				E8639EEA1B4CC643003FC8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8639EEB1B4CC643003FC8C5 /* Build configuration list for PBXNativeTarget "EmotionKeyoardDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +527,7 @@
 				E8639EED1B4CC643003FC8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
