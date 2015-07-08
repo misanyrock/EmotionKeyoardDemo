@@ -18,6 +18,7 @@
 		E8639EF21B4CC76E003FC8C5 /* Emoticons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8639EF11B4CC76E003FC8C5 /* Emoticons.swift */; };
 		E87696BF1B4D053500C5E634 /* UITextView+Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */; };
 		E87696C11B4D078C00C5E634 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */; };
+		E87696C31B4D137900C5E634 /* EmoticonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87696C21B4D137900C5E634 /* EmoticonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E8639EF11B4CC76E003FC8C5 /* Emoticons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticons.swift; sourceTree = "<group>"; };
 		E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Emoticon.swift"; sourceTree = "<group>"; };
 		E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
+		E87696C21B4D137900C5E634 /* EmoticonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				E8639EEF1B4CC6D3003FC8C5 /* Emoticons.bundle */,
 				E87696BE1B4D053500C5E634 /* UITextView+Emoticon.swift */,
 				E87696C01B4D078C00C5E634 /* EmoticonAttachment.swift */,
+				E87696C21B4D137900C5E634 /* EmoticonViewController.swift */,
 			);
 			name = EmoticonKeyboard;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				E8639EC31B4CC643003FC8C5 /* ViewController.swift in Sources */,
 				E8639EF21B4CC76E003FC8C5 /* Emoticons.swift in Sources */,
 				E8639EC11B4CC643003FC8C5 /* AppDelegate.swift in Sources */,
+				E87696C31B4D137900C5E634 /* EmoticonViewController.swift in Sources */,
 				E87696BF1B4D053500C5E634 /* UITextView+Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
