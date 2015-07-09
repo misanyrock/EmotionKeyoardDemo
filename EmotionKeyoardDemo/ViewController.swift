@@ -10,16 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // 如果调用函数，同样会有循环引用！
+    private lazy var emoticonKeyboardVC: EmoticonViewController = EmoticonViewController { [unowned self] (emoticon)  in
+        
+        self.textView.insertEmoticon(emoticon)
+    }
+    
+ 
+    @IBOutlet weak var textView: UITextView!
+    
+    @IBAction func emotionText(sender: AnyObject) {
+        print("最终结果 \(textView.emoticonText())")
     }
 
+    
+    deinit {
+        print("88")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let array = EmoticonPackage.packages()
+        for p in array {
+            print("\(p.groupName) \(p.emoticons?.count)")
+        }
+        
+        // 1. 添加子控制器
+        addChildViewController(emoticonKeyboardVC)
+        // 2. 设置输入视图
+        textView.inputView = emoticonKeyboardVC.view
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

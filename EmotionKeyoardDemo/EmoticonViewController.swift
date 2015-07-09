@@ -29,7 +29,7 @@ class EmoticonViewController: UIViewController {
     */
     func selectItem(item:UIBarButtonItem){
         let indexPath = NSIndexPath(forItem: 0, inSection: item.tag)
-        // MARK: - TODO something
+        collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.Left, animated: true)
     }
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.redColor()

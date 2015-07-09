@@ -39,8 +39,8 @@ class EmoticonPackage: NSObject {
         p.groupName = "最近"
         p.appendEmptyEmoticons()
         list.append(p)
-        
-        let path = NSBundle.mainBundle().pathForResource("emoticons.plist", ofType: nil, inDirectory: "Emoticons.boudle")!
+       
+        let path = NSBundle.mainBundle().pathForResource("emoticons.plist", ofType: nil, inDirectory: "Emoticons.bundle")!
         let dict = NSDictionary(contentsOfFile: path)!
         let array = dict["packages"] as! [[String:AnyObject]]
         
